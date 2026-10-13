@@ -1,7 +1,6 @@
 {
   "name": "dsh-zh-tw-ui",
   "version": "0.1.0",
-  "private": true,
   "description": "DeepSeek Harness Web UI in Traditional Chinese (Taiwan) — converts the rendered interface, including third-party plugin copy, at the DOM layer.",
   "keywords": [
     "dsh",
@@ -42,6 +41,7 @@
   "scripts": {
     "build": "node build.mjs",
     "test": "node test/run.mjs",
+    "prepublishOnly": "node test/run.mjs",
     "install-profile": "node install.mjs",
     "uninstall-profile": "node uninstall.mjs"
   },
@@ -55,6 +55,7 @@
     "build.mjs",
     "install.mjs",
     "uninstall.mjs",
-    "test"
+    "test",
+    "THIRD-PARTY-NOTICES.md"
   ]
 }
