@@ -1,0 +1,60 @@
+{
+  "name": "dsh-zh-tw-ui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeepSeek Harness Web UI in Traditional Chinese (Taiwan) — converts the rendered interface, including third-party plugin copy, at the DOM layer.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "locale",
+    "i18n",
+    "zh-tw",
+    "zh-hant",
+    "traditional-chinese",
+    "taiwan",
+    "opencc",
+    "繁體中文"
+  ],
+  "author": "linmino (https://github.com/linmino)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linmino/dsh-zh-tw-ui.git"
+  },
+  "homepage": "https://github.com/linmino/dsh-zh-tw-ui#readme",
+  "bugs": {
+    "url": "https://github.com/linmino/dsh-zh-tw-ui/issues"
+  },
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": { "default": "./lib/client.js" },
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "inject": [], "platform": "web" }
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test/run.mjs",
+    "install-profile": "node install.mjs",
+    "uninstall-profile": "node uninstall.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  },
+  "files": [
+    "lib",
+    "src",
+    "cordis.patch.yml",
+    "build.mjs",
+    "install.mjs",
+    "uninstall.mjs",
+    "test"
+  ]
+}

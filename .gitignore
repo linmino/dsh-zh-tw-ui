@@ -1,0 +1,5 @@
+# local artifacts
+node_modules/
+*.zh-tw-ui.bak
+.DS_Store
+Thumbs.db

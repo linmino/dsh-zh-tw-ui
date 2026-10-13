@@ -1,0 +1,6 @@
+# Keep every text file LF in the repository *and* in the working tree, so the
+# documented SHA-256 of the vendored payload verifies on every platform.
+* text=auto eol=lf
+
+# Byte-exact third-party payload: never normalise, never diff as text.
+src/vendor/opencc.full.umd.js -text

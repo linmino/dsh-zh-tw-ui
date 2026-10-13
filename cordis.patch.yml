@@ -1,0 +1,9 @@
+# Insert the local Traditional Chinese (Taiwan) UI converter.
+#
+# Pure client-side bundle: the host half is a no-op. The client half converts
+# Simplified Chinese DOM text to Traditional Chinese (Taiwan) at runtime, which
+# covers DSH's own namespaces *and* third-party plugin copy, including text that
+# new DSH versions add after this plugin was written.
+- insert:
+    - id: dsh-zh-tw-ui
+      name: 'dsh-zh-tw-ui'
